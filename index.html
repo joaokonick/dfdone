@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>DFdone500 | Home maintenance and renovations in Warrington</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700&family=Instrument+Sans:wght@400;600&display=swap">
+<style>
+:root{--bg1:#F4F7FB;--bg2:#D6E2F0;--ink:#0F2747;--mute:#4A5D75;--acc:#F28A1E;--accink:#0F2747;--panel:rgba(255,255,255,.78);--card:#fff;--line:rgba(31,43,51,.14);
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg1:#141C21;--bg2:#1F2D35;--ink:#EAF0F2;--mute:#A3B4BD;--panel:rgba(20,28,33,.78);--card:#22313A;--line:rgba(234,240,242,.16)}}
+:root[data-theme="dark"]{--bg1:#141C21;--bg2:#1F2D35;--ink:#EAF0F2;--mute:#A3B4BD;--panel:rgba(20,28,33,.78);--card:#22313A;--line:rgba(234,240,242,.16)}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;color:var(--ink);background:linear-gradient(180deg,var(--bg2),var(--bg1) 70%) fixed;background-color:var(--bg1);font:400 1.0625rem/1.6 "Instrument Sans",system-ui,sans-serif}
+#c{position:fixed;inset:0;width:100%;height:100%;z-index:0;pointer-events:none}
+header,main,footer{position:relative;z-index:1}
+a{color:inherit}a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible,#ring:focus-visible{outline:3px solid var(--acc);outline-offset:3px}
+header{display:flex;justify-content:space-between;align-items:center;gap:1rem;padding:1.25rem clamp(1rem,5vw,4rem)}
+nav{display:flex;gap:1.5rem;align-items:center}nav a{text-decoration:none;color:var(--mute)}
+.logo{display:inline-flex;align-items:center;gap:.6rem;text-decoration:none}
+.mark{width:2.3rem;height:2.3rem}
+.word{font:500 1.45rem/1 "Bricolage Grotesque",sans-serif;letter-spacing:-.02em}.word b{font-weight:700}
+.word i{font-style:normal;font-size:.78em;margin-left:.2em;padding:.12em .45em;border-radius:99px;background:var(--acc);color:var(--accink);font-weight:700;vertical-align:.08em}
+.btn{display:inline-block;padding:.8rem 1.4rem;border-radius:.6rem;background:var(--acc);color:var(--accink);font-weight:600;text-decoration:none;border:0;font-size:1rem;cursor:pointer}
+.btn.ghost{background:transparent;border:1.5px solid var(--ink);color:var(--ink)}
+section{min-height:100svh;display:flex;align-items:center;padding:4rem clamp(1rem,5vw,4rem)}
+.panel{max-width:32rem;padding:clamp(1.25rem,3vw,2rem);background:var(--panel);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-radius:1.2rem}
+h1,h2{font-family:"Bricolage Grotesque",sans-serif;line-height:1.04;letter-spacing:-.025em;margin:0 0 1rem}
+h1{font-size:clamp(2.5rem,6vw,4.6rem)}h2{font-size:clamp(1.9rem,4vw,2.8rem)}
+p{margin:0 0 1.25rem;color:var(--mute)}.row{display:flex;flex-wrap:wrap;gap:.75rem}
+#services{flex-direction:column;justify-content:center;text-align:center;gap:2rem}
+#services .panel{max-width:36rem}
+.stage{perspective:1400px;width:min(250px,64vw);height:340px;margin:1rem auto}
+#ring{position:relative;width:100%;height:100%;transform-style:preserve-3d;transition:transform .9s cubic-bezier(.2,.7,.2,1);touch-action:pan-y;cursor:grab}
+.card{position:absolute;inset:0;transform:rotateY(calc(var(--i)*45deg)) translateZ(350px);backface-visibility:hidden;-webkit-backface-visibility:hidden;background:var(--card);border-radius:1.2rem;padding:1.75rem;text-align:left;display:flex;flex-direction:column;justify-content:flex-end;gap:.5rem;box-shadow:0 20px 50px rgba(31,43,51,.18);border-top:6px solid var(--acc)}
+.card svg{width:3.5rem;height:3.5rem;stroke:var(--ink);fill:none;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round;margin-bottom:auto}
+.card h3{font:700 1.3rem/1.1 "Bricolage Grotesque",sans-serif;margin:0}.card p{margin:0;font-size:.95rem}
+.ctl{display:flex;gap:1rem;justify-content:center;align-items:center}
+.ctl button{width:3rem;height:3rem;border-radius:50%;border:1.5px solid var(--ink);background:var(--panel);color:var(--ink);font-size:1.3rem;cursor:pointer}
+.ctl span{color:var(--mute);font-size:.95rem;min-width:13rem;text-align:center}
+#reviews{display:grid;gap:2rem;align-content:center}
+.score{font:700 4.5rem/1 "Bricolage Grotesque",sans-serif}
+.stars{color:var(--acc);letter-spacing:.1em;font-size:1.1rem}
+.rl{list-style:none;margin:0;padding:0;background:var(--panel);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-radius:1.2rem;padding:.5rem 1.5rem}
+.rl li{display:grid;grid-template-columns:2.6rem 1fr;gap:.2rem 1rem;padding:1.25rem 0;border-bottom:1px solid var(--line)}
+.rl li:last-child{border:0}
+.av{grid-row:span 3;width:2.6rem;height:2.6rem;border-radius:50%;background:var(--acc);color:var(--accink);display:grid;place-items:center;font:700 1.1rem "Bricolage Grotesque",sans-serif}
+.rl b{font-weight:600}.rl small{color:var(--mute)}.rl q{quotes:none;display:block;margin:.2rem 0}
+.rl a{font-size:.95rem;font-weight:600}
+#contact{display:grid;gap:2rem;align-content:center}
+form{background:var(--card);border-radius:1.2rem;padding:clamp(1.25rem,3vw,2rem);display:grid;gap:1rem;box-shadow:0 20px 50px rgba(31,43,51,.12)}
+label{display:grid;gap:.3rem;font-weight:600;font-size:.95rem}
+input,select,textarea{font:inherit;color:var(--ink);background:var(--bg1);border:1.5px solid var(--line);border-radius:.6rem;padding:.7rem .85rem;width:100%}
+textarea{min-height:5.5rem;resize:vertical}
+#done[hidden]{display:none}#done dl{margin:1rem 0;display:grid;grid-template-columns:auto 1fr;gap:.35rem 1rem}#done dt{font-weight:600}#done dd{margin:0;color:var(--mute)}
+footer{padding:2rem clamp(1rem,5vw,4rem) 3rem;color:var(--mute);font-size:.9rem;display:flex;flex-wrap:wrap;gap:1rem;justify-content:space-between;align-items:center}
+@media (min-width:900px){#reviews{grid-template-columns:1fr 1.4fr;gap:4rem}#contact{grid-template-columns:1fr 1.1fr;gap:4rem}#contact .panel{justify-self:start}}
+@media (max-width:640px){nav a:not(.btn){display:none}.word{font-size:1.2rem}}
+@media (prefers-reduced-motion:reduce){#ring{transition:none}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<canvas id="c" aria-hidden="true"></canvas>
+<header>
+<a class="logo" href="#top" aria-label="DFdone500 home"><svg class="mark" viewBox="0 0 40 40" aria-hidden="true"><rect width="40" height="40" rx="10" fill="var(--ink)"/><path d="M8 20 20 9l12 11" fill="none" stroke="var(--bg1)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><path d="M14 26l4 4 8-9" fill="none" stroke="var(--acc)" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="word"><b>DF</b>done<i>500</i></span></a>
+<nav><a href="#services">Services</a><a href="#reviews">Reviews</a><a class="btn" href="#contact">Get a quote</a></nav>
+</header>
+<main id="top">
+<section>
+<div class="panel">
+<h1>From small repairs to complete renovations</h1>
+<p>Residential and commercial property maintenance and improvements across the North West. Homes, shops, offices, restaurants and commercial properties.</p>
+<div class="row"><a class="btn" href="tel:07895995347">Call 07895 995347</a><a class="btn ghost" href="#contact">Describe your job</a></div>
+</div>
+</section>
+
+<section id="services">
+<div class="panel"><h2>What we take on</h2><p>Eight kinds of work, inside and out. Turn the ring to see each one.</p></div>
+<div class="stage"><div id="ring" tabindex="0" role="group" aria-roledescription="carousel" aria-label="Services">
+<article class="card" style="--i:0"><svg viewBox="0 0 40 40" aria-hidden="true"><path d="M4 20h32v5a9 9 0 0 1-9 9H13a9 9 0 0 1-9-9zM10 20V9a4 4 0 0 1 8 0"/></svg><h3>Bathrooms &amp; Kitchens</h3><p>Full refits. Customers say the cost came in well under other quotes.</p></article>
+<article class="card" style="--i:3"><svg viewBox="0 0 40 40" aria-hidden="true"><path d="M7 34 24 17M18 8l13 13-6 6-13-13z"/></svg><h3>Carpentry &amp; Joinery</h3><p>Woodwork, fitting and repairs.</p></article>
+<article class="card" style="--i:7"><svg viewBox="0 0 40 40" aria-hidden="true"><path d="M5 21 20 7l15 14M9 19v15h22V19M15 27l4 4 7-8"/></svg><h3>General Repairs &amp; Maintenance</h3><p>Small jobs, started without wasting time.</p></article>
+<article class="card" style="--i:4"><svg viewBox="0 0 40 40" aria-hidden="true"><path d="M4 9h32v8H4zM4 21h14v9H4zM22 21h14v9H22z"/></svg><h3>Extensions, Lofts &amp; Renovations</h3><p>Larger projects, delivered on deadline.</p></article>
+<article class="card" style="--i:1"><svg viewBox="0 0 40 40" aria-hidden="true"><path d="M8 8h20v8H8zM28 12h4v8H18v6M16 26h4v9h-4z"/></svg><h3>Painting &amp; Decorating</h3><p>Fresh finishes, inside and out.</p></article>
+<article class="card" style="--i:2"><svg viewBox="0 0 40 40" aria-hidden="true"><path d="M5 5h13v13H5zM22 5h13v13H22zM5 22h13v13H5zM22 22h13v13H22z"/></svg><h3>Flooring &amp; Tiling</h3><p>Floors and tiling for homes and commercial spaces.</p></article>
+<article class="card" style="--i:5"><svg viewBox="0 0 40 40" aria-hidden="true"><path d="M4 14h32M4 22h32M4 30h32M10 10v24M30 10v24"/></svg><h3>Decking &amp; Outdoor Projects</h3><p>Decking and garden projects.</p></article>
+<article class="card" style="--i:6"><svg viewBox="0 0 40 40" aria-hidden="true"><path d="M3 20 20 7l17 13M6 24h28M6 24v8"/></svg><h3>Roofing &amp; Guttering</h3><p>Roof and gutter work to keep the weather out.</p></article>
+</div></div>
+<div class="ctl"><button id="prev" aria-label="Previous service">&#8592;</button><span id="lbl" aria-live="polite">Bathrooms &amp; Kitchens</span><button id="next" aria-label="Next service">&#8594;</button></div>
+</section>
+
+<section id="reviews">
+<div class="panel">
+<div class="score">5.0</div><div class="stars" aria-hidden="true">★★★★★</div>
+<p>27 reviews on Google. Every one of them is five stars.</p>
+<a class="btn" href="https://www.google.com/maps/search/?api=1&query=DFdone500+Warrington" target="_blank" rel="noopener">Read all reviews on Google</a>
+</div>
+<ul class="rl">
+<li><span class="av">J</span><span><b>Joao</b> <small>A week ago</small></span><q>Professional work. Everything requested was delivered with excellence. I would recommend them to anyone.</q><a href="https://www.google.com/maps/search/?api=1&query=DFdone500+Warrington" target="_blank" rel="noopener">Read on Google</a></li>
+<li><span class="av">C</span><span><b>Cleiton</b> <small>A week ago</small></span><q>Good quality and affordable prices. Both bathrooms renovated for the cost of one on other quotes.</q><a href="https://www.google.com/maps/search/?api=1&query=DFdone500+Warrington" target="_blank" rel="noopener">Read on Google</a></li>
+<li><span class="av">W</span><span><b>Wagner</b> <small>A week ago · Local Guide</small></span><q>They met the deadline and delivered unparalleled quality.</q><a href="https://www.google.com/maps/search/?api=1&query=DFdone500+Warrington" target="_blank" rel="noopener">Read on Google</a></li>
+<li><span class="av">D</span><span><b>Divya</b> <small>A week ago</small></span><q>Hardworking, committed, completely reliable and trustworthy.</q><a href="https://www.google.com/maps/search/?api=1&query=DFdone500+Warrington" target="_blank" rel="noopener">Read on Google</a></li>
+</ul>
+</section>
+
+<section id="contact">
+<div class="panel"><h2>Tell us about your project</h2><p>Free quotes. A few quick questions so we understand the job before we talk. Based in Warrington, serving the North West.</p></div>
+<div>
+<form id="f">
+<label>Your name<input name="name" required autocomplete="name"></label>
+<label>Phone or email<input name="contact" required autocomplete="email"></label>
+<label>Type of work<select name="type"><option>Bathrooms &amp; Kitchens</option><option>Painting &amp; Decorating</option><option>Flooring &amp; Tiling</option><option>Carpentry &amp; Joinery</option><option>Extensions, Lofts &amp; Renovations</option><option>Decking &amp; Outdoor Projects</option><option>Roofing &amp; Guttering</option><option>General Repairs &amp; Maintenance</option><option>Not sure yet</option></select></label>
+<label>Is it a home or a business?<select name="place"><option>Home</option><option>Shop, office or restaurant</option><option>Other commercial property</option></select></label>
+<label>Town or postcode<input name="area" required autocomplete="postal-code"></label>
+<label>When would you like to start?<select name="when"><option>As soon as possible</option><option>Within a month</option><option>Just planning</option></select></label>
+<label>Tell us about the job<textarea name="notes"></textarea></label>
+<button class="btn" type="submit">Review my answers</button>
+</form>
+<div id="done" class="panel" hidden role="status"><h2>Thanks, here is your summary</h2><dl id="sum"></dl><p>Online sending is coming soon. For now, call us and mention these details.</p><a class="btn" href="tel:07895995347">Call 07895 995347</a></div>
+</div>
+</section>
+</main>
+<footer><span>D F Done Five Hundred, Home Maintenance and Renovations. Warrington.</span><span><a href="tel:07895995347">07895 995347</a> · <a href="https://wa.me/447895995347" target="_blank" rel="noopener">WhatsApp</a> · <a href="https://www.instagram.com/dfdone500/" target="_blank" rel="noopener">Instagram @dfdone500</a></span></footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script>
+(function(){
+var names=["Bathrooms & Kitchens","Painting & Decorating","Flooring & Tiling","Carpentry & Joinery","Extensions, Lofts & Renovations","Decking & Outdoor Projects","Roofing & Guttering","General Repairs & Maintenance"],idx=0,ring=document.getElementById("ring"),lbl=document.getElementById("lbl");
+function go(i){idx=i;ring.style.transform="translateZ(-350px) rotateY("+(-i*45)+"deg)";lbl.textContent=names[((i%8)+8)%8]}
+go(0);
+document.getElementById("prev").onclick=function(){go(idx-1)};document.getElementById("next").onclick=function(){go(idx+1)};
+ring.addEventListener("keydown",function(e){if(e.key==="ArrowLeft")go(idx-1);if(e.key==="ArrowRight")go(idx+1)});
+var sx=null;ring.addEventListener("pointerdown",function(e){sx=e.clientX});
+addEventListener("pointerup",function(e){if(sx!==null){var d=e.clientX-sx;if(Math.abs(d)>40)go(idx+(d<0?1:-1));sx=null}});
+function sendEnquiry(data){/* TODO: connect an email service here */}
+document.getElementById("f").addEventListener("submit",function(e){
+e.preventDefault();var d=Object.fromEntries(new FormData(e.target)),s=document.getElementById("sum");
+var lab={name:"Name",contact:"Contact",type:"Work",place:"Property",area:"Area",when:"Start",notes:"Notes"};s.innerHTML="";
+Object.keys(lab).forEach(function(k){if(d[k]){var t=document.createElement("dt"),v=document.createElement("dd");t.textContent=lab[k];v.textContent=d[k];s.append(t,v)}});
+sendEnquiry(d);e.target.hidden=true;document.getElementById("done").hidden=false;
+});
+
+try{
+var reduce=matchMedia("(prefers-reduced-motion: reduce)").matches;
+var cv=document.getElementById("c"),R=new THREE.WebGLRenderer({canvas:cv,alpha:true,antialias:true});
+R.setPixelRatio(Math.min(devicePixelRatio,2));R.shadowMap.enabled=true;R.shadowMap.type=THREE.PCFSoftShadowMap;
+var S=new THREE.Scene(),cam=new THREE.PerspectiveCamera(35,1,.1,100);
+S.add(new THREE.HemisphereLight(0xffffff,0xa9bcc4,.75));
+var dl=new THREE.DirectionalLight(0xfff4e0,.95);dl.position.set(7,11,8);dl.castShadow=true;dl.shadow.mapSize.set(1024,1024);
+var sc=dl.shadow.camera;sc.left=-10;sc.right=10;sc.top=10;sc.bottom=-10;sc.far=40;S.add(dl);
+var G=new THREE.Group();S.add(G);
+function tex(draw,w,h){var c=document.createElement("canvas");c.width=w;c.height=h;draw(c.getContext("2d"));var t=new THREE.CanvasTexture(c);t.wrapS=t.wrapT=THREE.RepeatWrapping;return t}
+var rnd=function(a){return a[Math.floor(Math.random()*a.length)]};
+var brick=tex(function(x){x.fillStyle="#d4cabb";x.fillRect(0,0,256,256);for(var r=0;r<16;r++)for(var k=-1;k<5;k++){x.fillStyle=rnd(["#a8553f","#b0604a","#9a4a37","#b86b50"]);x.fillRect(k*64+(r%2?32:0)+2,r*16+2,60,12)}},256,256);
+var slate=tex(function(x){x.fillStyle="#3c474e";x.fillRect(0,0,256,256);for(var r=0;r<8;r++)for(var k=-1;k<5;k++){x.fillStyle=rnd(["#56646c","#4b5961","#617079","#52606a"]);x.fillRect(k*64+(r%2?32:0)+2,r*32+2,60,28)}},256,256);
+function M(c,map,rep){var m=new THREE.MeshStandardMaterial({color:c,roughness:.9});if(map){m.map=map.clone();m.map.needsUpdate=true;m.map.repeat.set(rep[0],rep[1])}return m}
+var P=[];
+function add(g,mat,x,y,z,mode,a,b,rx){var m=new THREE.Mesh(g,mat);m.position.set(x,y,z);if(rx)m.rotation.x=rx;m.castShadow=m.receiveShadow=true;G.add(m);P.push({m:m,y:y,mode:mode,a:a,b:b});return m}
+function bx(w,h,d,base){var g=new THREE.BoxGeometry(w,h,d);if(base)g.translate(0,h/2,0);return g}
+var WH=0xf4f2ec,GL=new THREE.MeshStandardMaterial({color:0x8fb0c2,roughness:.15,metalness:.35}),white=M(WH),stone=M(0xe4dfd3),slateM=M(0x56646c),
+W=5,D=3.4,T=3.35;
+add(new THREE.CylinderGeometry(7.5,7.5,.2,64).translate(0,-.1,0),M(0xcfe0c8),0,0,0,"grow",0,.08);
+add(bx(.9,.04,3.4,1),M(0xd9d5cc),1.2,0,3.6,"grow",.05,.12);
+add(bx(W+.2,.35,D+.2,1),M(0xb9b3a8),0,0,0,"grow",.06,.14);
+var bm=function(w,h){return M(0xffffff,brick,[w/1.6,h/1.6])};
+add(bx(W,3,.24,1),bm(W,3),0,.35,D/2-.12,"grow",.12,.28);
+add(bx(W,3,.24,1),bm(W,3),0,.35,-D/2+.12,"grow",.14,.3);
+add(bx(.24,3,D-.4,1),bm(D,3),-W/2+.12,.35,0,"grow",.16,.32);
+add(bx(.24,3,D-.4,1),bm(D,3),W/2-.12,.35,0,"grow",.18,.34);
+var sh=new THREE.Shape();sh.moveTo(-D/2,0);sh.lineTo(D/2,0);sh.lineTo(0,1.3);
+var gg=new THREE.ExtrudeGeometry(sh,{depth:.22,bevelEnabled:false}),gm=M(0xffffff,brick,[.62,.62]);
+[-1,1].forEach(function(s,i){var m=add(gg,gm,s<0?-W/2:W/2-.22,T,0,"grow",.32,.4);m.rotation.y=Math.PI/2});
+var ra=Math.atan(1.3/(D/2)),rl=Math.hypot(D/2,1.3)+.35,rm=function(){return M(0xffffff,slate,[W/1.3,rl/1.3])};
+add(bx(W+.5,.14,rl),rm(),0,T+.72,D/4+.1,"drop",.38,.5,ra);
+add(bx(W+.5,.14,rl),rm(),0,T+.72,-D/4-.1,"drop",.42,.55,-ra);
+add(bx(W+.5,.14,.34),slateM,0,T+1.38,0,"drop",.52,.58);
+[-1,1].forEach(function(s,i){var x=s*(W/2-.5);
+add(bx(.55,1.5,.55,1),M(0xffffff,brick,[.4,1]),x,T+.55,-.3,"grow",.55,.65);
+add(bx(.7,.1,.7),stone,x,T+2.1,-.3,"pop",.63,.68);
+[-.14,.14].forEach(function(o){add(new THREE.CylinderGeometry(.1,.13,.4,12).translate(0,.2,0),M(0xb9633f),x+o,T+2.15,-.3,"pop",.66,.72)})});
+var n=0;
+function win(x,y,w,h,z,a){a=a||(.62+(n++)*.025);
+add(bx(w,h,.1,1),white,x,y,z,"pop",a,a+.1);add(bx(w-.18,h-.18,.12,1),GL,x,y+.09,z+.01,"pop",a,a+.1);
+add(bx(.05,h-.18,.14,1),white,x,y+.09,z+.02,"pop",a,a+.1);add(bx(w-.18,.05,.14),white,x,y+h/2,z+.02,"pop",a,a+.1);
+add(bx(w+.24,.07,.22,1),stone,x,y-.07,z+.05,"pop",a,a+.1);add(bx(w+.2,.1,.14,1),stone,x,y+h,z,"pop",a,a+.1)}
+var Z=D/2;
+add(bx(1.9,1.5,.7,1),stone,-1.3,.35,Z+.3,"pop",.6,.7);win(-1.3,.6,1.5,1.05,Z+.66);add(bx(2.1,.1,.9,1),slateM,-1.3,1.85,Z+.3,"drop",.7,.78);
+win(-1.3,2.25,.95,1.0,Z+.06);win(1.2,2.25,.95,1.0,Z+.06);
+var dc=M(0x1b3a63);add(bx(.95,1.7,.1,1),dc,1.2,.35,Z+.06,"pop",.74,.82);
+[[-.2,1.45],[.2,1.45]].forEach(function(p){add(bx(.3,.5,.04,1),GL,1.2+p[0],p[1],Z+.13,"pop",.8,.86)});
+[-.2,.2].forEach(function(o){add(bx(.3,.4,.04,1),M(0x142c4d),1.2+o,.55,Z+.13,"pop",.8,.86)});
+add(new THREE.SphereGeometry(.05,10,8),M(0xc9a227),1.55,1.1,Z+.2,"pop",.82,.88);
+add(bx(1.5,.12,.75,1),slateM,1.2,2.1,Z+.37,"drop",.78,.86);
+[.5,1.9].forEach(function(x){add(bx(.1,1.72,.1,1),white,x,.35,Z+.7,"grow",.8,.88)});
+add(bx(1.3,.3,.6,1),stone,1.2,0,Z+.45,"pop",.76,.84);
+var hd=M(0x6f9a6b);
+add(bx(4,.75,.55,1),hd,-1.6,0,5.4,"pop",.86,.94);add(bx(2.2,.75,.55,1),hd,3.4,0,5.4,"pop",.88,.95);
+add(new THREE.SphereGeometry(.5,14,10),hd,-3.2,.5,3.5,"pop",.9,.97);add(new THREE.SphereGeometry(.45,14,10),hd,3.5,.45,3.2,"pop",.92,.99);
+function size(){var w=innerWidth,h=innerHeight;R.setSize(w,h,false);cam.aspect=w/h;cam.updateProjectionMatrix();var wide=w/h>1.2;G.position.set(wide?3:0,wide?-.8:-1.6,0)}
+addEventListener("resize",size);size();
+var cur=reduce?1:0,sm=0;
+function E(t){return 1-Math.pow(1-t,3)}function B(t){return 1+2.70158*Math.pow(t-1,3)+1.70158*Math.pow(t-1,2)}
+function frame(){
+var y=scrollY,max=Math.max(1,document.documentElement.scrollHeight-innerHeight);
+if(!reduce)cur+=(Math.min(1,y/(innerHeight*1.15))-cur)*.08;sm+=(y/max-sm)*.08;
+P.forEach(function(o){var t=Math.min(1,Math.max(0,(cur-o.a)/(o.b-o.a)));o.m.visible=t>0;
+if(o.mode==="grow")o.m.scale.y=Math.max(.001,E(t));else if(o.mode==="drop")o.m.position.y=o.y+(1-E(t))*9;else o.m.scale.setScalar(Math.max(.001,B(t)))});
+var wide=innerWidth/innerHeight>1.2,r=wide?19:25,ang=reduce?1.2:Math.PI/2-.6+sm*1.2;
+cam.position.set(G.position.x+Math.cos(ang)*r,wide?6:8,Math.sin(ang)*r);cam.lookAt(G.position.x,1.9+G.position.y,0);
+cv.style.opacity=y<innerHeight?1:Math.max(.18,1-(y-innerHeight)/(innerHeight*.6));
+R.render(S,cam);requestAnimationFrame(frame)}
+frame();
+}catch(err){console.warn("3D unavailable",err)}
+})();
+</script>
+</body>
+</html>
